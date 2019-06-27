@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("p").text(function(n){
+					return "this is simple counting... this p element has index: "+ n;
+				});
+			});
+			$("#btn2").click(function(){
+				$("p").html(function(n,currentText){
+					return currentText + ".... now counting ...this p element has index: "+ n;
+				});
+			});
+			$("#btn3").click(function(){
+				$("#input1").val(function(n,currentText){
+					return currentText + " bi bi bi.....";	
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+<h1>previous get.html html(),text(),val().. only can return values now we will set it..</h1>
+<button id="btn1">setting content of text text()</button>
+<button id="btn2">setting content of element html()</button>
+<br>
+<p>this is paragraph</p>
+<p>this is another paragraph..</p>
+<p>ha ha ha ...</p>
+<hr/>
+here i cannot use form tag don't know why.....<br>
+	<label>Enter anything</label>
+	<input type="text" name="anything" id="input1">
+	<button type="submit" id="btn3">show</button>
+
+</body>
+</html>

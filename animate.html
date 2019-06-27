@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$("#div1").animate({left: '250px'},1000);
+			});
+			$("#button2").click(function(){
+				$("#div2").animate({
+					left: '250px',
+				    opacity: '0.5',
+				    height: '200px',
+				    width:  '200px'},"slow");
+			});
+			$("#button3").click(function(){
+				$("#div3").animate({
+					left: '250px',
+					height:'+=150px',
+					width: '+=150px'
+				},"slow");
+			});
+			$("#button4").click(function(){
+				$("#div4").animate({width: 'toggle'},1000);
+			});
+			$("#button5").click(function(){
+				var div5 = $("#div5");
+				div5.animate({height: '250px', opacity:'0.5'},"slow");
+				div5.animate({width: '600px', opacity:'0.7'}, "slow");
+				div5.animate({height: '80px', opacity:'0.5'},"slow");
+				div5.animate({width: '80px', opacity:'0.6'},"slow");
+			});
+			$("#button6").click(function(){
+				var div6 = $("#div6");
+				div6.animate({height: '250px', opacity: '0.5'},"slow");
+				div6.animate({width: '600px', opacity: '0.9'},"slow");
+				div6.animate({fontSize: '4em'},"slow");
+				div6.animate({height: '80px', opacity: '0.9'},"slow");
+			});
+		});
+	</script>
+</head>
+<body>
+   <button id="button1">Single Animation</button>
+   <button id="button2">Multiple Animation</button>
+   <button id="button3">Relative Animation</button>
+   <button id="button4">hide/show/toggle(here toggling)</button>
+   <button id="button5">Queue Animation</button>
+   <button id="button6">Start Animation</button>
+
+   <p></p>
+   <div id="div1" style="width: 80px; height: 80px; background-color: red; position: relative;"></div>
+   <p></p>
+   <div id="div2" style="width: 80px; height: 80px; background-color: blue; position: relative;"></div>
+   <p></p>
+   <div id="div3" style="width: 80px; height: 80px; background-color: green; position: relative;"></div>
+   <p></p>
+   <div id="div4" style="width: 80px; height: 80px; background-color: orange; position: relative;"></div>
+   <p></p>
+   <div id="div5" style="width: 80px; height: 80px; background-color: yellow; position: relative;"></div>
+   <p></p>
+   <div id="div6" style="width: 80px; height: 80px; background-color: pink; position: relative;">hiiii..</div>
+</body>
+</html>

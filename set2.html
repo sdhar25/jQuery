@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#p1").text("helllllllllooo...");
+			});
+			$("#btn2").click(function(){
+				$("#p2").html("<b>helllllllooo</b>");
+			});
+			$("#btn3").click(function(){
+				$("#t1").val("dooollllyy");
+			});
+		});
+	</script>
+</head>
+<body>
+<h1>setting using text, html, val</h1>
+<p id="p1">This is paragraph..</p>
+<p id="p2">This toooooo...</p>
+<br>
+<p></p>
+<label>Enter anything</label>
+<input type="text" name="anything" value="mickey virus" id="t1">
+<p></p>
+<button id="btn1">set text</button>
+<button id="btn2">set HTML</button>
+<button id="btn3">set value</button>
+<hr>
+
+</body>
+</html>

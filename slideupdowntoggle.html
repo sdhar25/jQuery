@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+         $(document).ready(function(){
+         	$("#flip").click(function(){
+         		$("#panel").slideDown("slow");
+         	});
+         	$("#flip2").click(function(){
+         		$("#panel2").slideUp();
+         	});
+         	$("#flip3").click(function(){
+         		$("#panel3").slideToggle("1000");
+         	});
+         });
+
+	</script>
+	<style>
+		#flip, #panel{
+			padding: 5px;
+			text-align: center;
+			background-color:  lightgreen;
+			border: solid 1px;
+		}
+		#panel{
+			display: none;
+			padding: 50px;
+		}
+
+		#flip2, #panel2{
+			padding: 5px;
+			text-align: center;
+			background-color:  blue;
+			border: solid 1px;
+		}
+		#panel2{
+			padding: 50px;
+		}
+
+		#flip3, #panel3{
+			padding: 5px;
+			text-align: center;
+			background-color: orange;
+			border: solid 1px;
+		}
+		#panel3{
+			display: none;
+			padding: 50px;
+		}
+	</style>
+</head>
+<body>
+ <div id="flip">click here please</div>
+ <div id="panel">hellllllllllllloooooo...</div>
+<p></p>
+ <div id="flip2">click here tooo</div>
+ <div id="panel2">ha ha ha .........</div>
+<p></p>
+ <div id="flip3">click here.......</div>
+ <div id="panel3">hiiiiiiii<br/>biiiiiiiiii</div>
+</body>
+</html>

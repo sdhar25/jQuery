@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$("#button1").click(function(){
+    			$("#div1").fadeIn();
+    		});
+    		$("#button2").click(function(){
+    			$("#div2").fadeOut(1000);
+    		});
+    		$("#button3").click(function(){
+    			$("#div3").fadeToggle("fast");
+    		});
+    		$("#button4").click(function(){
+    			$("#div4").fadeTo(2000,0.5);
+    		})
+    	})
+    </script>
+</head>
+<body>
+<h1>Fadein,out,toggle,to</h1>
+<button id="button1">fade in</button>
+<button id="button2">fade out</button>
+<button id="button3">fade toggle</button>
+<button id="button4">fade to</button>
+<p></p>
+<div id="div1" style="width:80px; height: 80px; display:none; background-color: red"></div>
+<p></p>
+<div id="div2" style="width:80px; height: 80px;  background-color: blue"></div>
+<p></p>
+<div id="div3" style="width:80px; height: 80px;  background-color: lightgreen"></div>
+<p></p>
+<div id="div4" style="width:80px; height: 80px;  background-color: orange"></div>
+</body>
+</html>

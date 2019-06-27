@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+       $(document).ready(function(){
+       	$("#button1").click(function(){
+       		$("p").hide(2000);
+       	});
+       	$("#button2").click(function(){
+       		$("p").show(1000);
+       	});
+       	$("#enter").mouseenter(function(){
+       		$("h4").hide("slow");
+       	});
+       	$("#leave").mouseleave(function(){
+       		$("h4").show("fast");
+       	});
+       });
+
+
+	</script>
+</head>
+<body>
+	<h1>hiding and showing paragraph using hide/show</h1>
+	<p>this is going to either hide or show</p>
+	<button id="button1">Hide</button>&nbsp;
+	<button id="button2">Show</button>
+	<hr/>
+	<h2>hiding and showing using mouse enter and mouseleave</h2>
+	<br/><br>
+	<h4>heloooooo.....</h4>
+	<h5 id="enter">mouse enter</h5>
+	<h5 id="leave">mouse leave</h5>
+
+</body>
+</html>

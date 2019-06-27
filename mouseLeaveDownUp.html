@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+        $(document).ready(function(){
+          $("#p1").mouseleave(function(){
+          	alert("You are leaving area p1");
+          });
+          $("#p2").mousedown(function(){
+          	alert("mouse down over area p2 that is may be left, right or middle mouse button is pressedwhile over HTML element");
+          });
+          $("#p3").mouseup(function(){
+          	alert("mouse is over p3, this is used when left, right ,middle mouse button is releases over HTML element");
+          });
+        });
+
+
+	</script>
+</head>
+<body>
+    <h1>Mouse leave , mouse down, mouse up</h1>
+    <p></p>
+    
+    <p></p>
+    <h2 id="p2">mouse down over area p2 that is may be left, right or middle mouse button is pressed over HTML element</h2>
+    <p></p>
+    <h2 id="p3">mouse is over p3, this is used when left, right ,middle mouse button is releases over HTML element</h2>
+    <p></p>
+    <h2 id="p1">You are in area p1, mouse leaving area</h2>
+</body>
+</html>

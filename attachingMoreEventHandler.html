@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+       $(document).ready(function(){
+       	$("p").on({
+       		mouseenter:function(){
+       			$(this).css("background-color","lightblue");
+       		},
+       		mouseleave:function(){
+       			$(this).css("background-color","lightgreen");
+       		},
+       		click:function(){
+       			$(this).css("background-color","orange");
+       		}
+       	});
+       });
+
+
+	</script>
+</head>
+<body>
+<h1>On function : attaching multiple event handler</h1>
+<p>Bring your mouse pointer hahahahaha.......</p>
+</body>
+</html>

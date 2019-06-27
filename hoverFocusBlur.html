@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+        $(document).ready(function(){
+        	$("#p1").hover(function(){
+        		console.log("you enter area p1");
+        		$(this).css("background-color","yellow");
+        	},
+        	function(){
+        		console.log("bye .... leaving area p1");
+        		$(this).css("background-color","lightgreen");
+        	});
+        	$("input").focus(function(){
+        		$(this).css("background-color","lightgreen");
+        	});
+        	$("input").blur(function(){
+        		$(this).css("background-color","orange");
+        	});
+
+        });
+
+	</script>
+</head>
+<body>
+    <h1>hovering focus blur</h1>
+    <p></p>
+    <p id="p1">this is area p1</p>
+    <p></p>
+    Name: <input type="text" name="name">
+    <p></p>
+    email: <input type="email" name="email">
+</body>
+</html>

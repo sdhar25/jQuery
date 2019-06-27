@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="D:\Jquery\jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("div").hide("slow",function(){
+					alert("this div is now hidden");
+				});
+			});
+			$("#btn2").click(function(){
+				$("#p1").hide("slow");
+				alert("without callback function");
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<h1>use of callback function</h1>
+     <button id="btn1">hide</button>
+     <p></p>
+     <div>hellllllllloooo...biiiii...</div>
+     <h1>alert without callback function</h1>
+     <button id="btn2">hide2</button>
+     <p></p>
+     <p id="p1">ha ha ha</p>
+</body>
+</html>
